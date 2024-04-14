@@ -24,7 +24,6 @@ const AddParking = () => {
         try {
             await registerParkingArea(parkingName, pricePerHour, parkingAddress);
             alert('Added successful');
-            // Navigate to the next page after adding parking
         } catch (error) {
             console.error('Error adding parking:', error);
             alert('Error adding parking. Please try again.');

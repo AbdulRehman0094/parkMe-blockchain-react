@@ -13,7 +13,6 @@ const HomePage = () => {
             try {
                 const result = await getAllParkings();
                 setParkings(result);
-                // Set default selected parking address if parkings array is not empty
                 if (result.length > 0) {
                     setParkingAddress(result[0].parkingAreaAddress);
                 }

@@ -5,7 +5,7 @@ import { isParkingExist } from '../parkingFrontend';
 
 const LoginParking = () => {
     const [parkingAddress, setParkingAddress] = useState('');
-    const navigate = useNavigate(); // Initialize useNavigate hook
+    const navigate = useNavigate(); 
 
     const handleParkingAddressChange = (e) => {
         setParkingAddress(e.target.value);
@@ -14,11 +14,9 @@ const LoginParking = () => {
     const handleLogin = async () => {
         const flag = await isParkingExist(parkingAddress);
         if (flag) {
-            // Navigate to the '/parkingarea' route
             navigate('/parkingarea');
             localStorage.setItem('parkingAddress',parkingAddress)
         } else {
-            // Handle invalid parking address
             alert('Invalid parking address. Please try again.');
         }
     }

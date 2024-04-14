@@ -10,10 +10,9 @@ const ParkingArea = () => {
     useEffect(() => {
         const fetchCurrentlyParkedVehicles = async () => {
             try {
-                // Call getCurrentlyParkedVehicles function
                 const result = await getCurrentlyParkedVehicles(localStorage.getItem('parkingAddress'));
                 setVehicles(result)
-                console.log(result); // Handle the result as needed
+                console.log(result); 
             } catch (error) {
                 console.error('Error fetching currently parked vehicles:', error);
             }
