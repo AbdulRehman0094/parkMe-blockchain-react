@@ -39,13 +39,5 @@ export async function isParkingExist(parkingAreaAddress) {
 }
 
 
-const parking = async () => {
-    const parkingAddress = '0xb992fc5c1bddd7314d214d8619c3e3cf8ef62165';
-    const vehicleOwnerAddress = '0xa6c9bbe3767e02100993ba13c509fb8cfbfcc3c6';
-    // console.log(await registerParkingArea('noman parking', 1200, parkingAddress));
-    // console.log(await getAllParkings());
-    // console.log(await parkIn(parkingAddress, 'qqw12121', 1200, vehicleOwnerAddress));
-    console.log(await getCurrentlyParkedVehicles(parkingAddress));
-    // console.log(await parkOut(parkingAddress, 'qqw12121', 1800, vehicleOwnerAddress, 1200));
-}
-parking();
+
+
